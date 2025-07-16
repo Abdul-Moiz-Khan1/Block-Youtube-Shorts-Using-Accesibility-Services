@@ -17,39 +17,7 @@ class AppLoggerService : AccessibilityService() {
 
     private var windowManager: WindowManager? = null
     private var overlayView: View? = null
-//    override fun onAccessibilityEvent(event: AccessibilityEvent?) {
-//        if (event?.eventType == AccessibilityEvent.TYPE_WINDOW_STATE_CHANGED) {
-//            val packageName = event.packageName?.toString()
-//            Log.d("AppLogger", "Opened: $packageName")
-//            if (packageName == "com.android.chrome") {
-//                Log.d("AppLogger", "conition true")
-//                showBlockOverlay()
-//            }else{
-//                removeOverlay()
-//            }
-//        }
-//    }
 
-//    override fun onAccessibilityEvent(event: AccessibilityEvent?) {
-//    if (event == null || event.packageName != "com.google.android.youtube") return
-//
-//    val rootNode = if(event.source != null){
-//
-//        Log.d("YTShortsDetector", "${event.source.toString()}")
-//        event.source
-//    }  else {
-//
-//
-//        Log.d("YTShortsDetector", "${event.source.toString()}")
-//        return
-//    }
-//    Log.d("YTShortsDetector", "${rootNode.toString()}")
-//
-//    if (isYouTubeShorts(rootNode)) {
-//        Log.d("YTShortsDetector", "YouTube Shorts opened")
-////        showBlockOverlay()
-//    }
-//    }
     override fun onAccessibilityEvent(event: AccessibilityEvent?) {
     if (event?.source == null) return
 
@@ -96,12 +64,6 @@ class AppLoggerService : AccessibilityService() {
         windowManager?.addView(overlayView, layoutParams)
     }
 
-    private fun removeOverlay() {
-        if (overlayView != null) {
-            windowManager?.removeView(overlayView)
-            overlayView = null
-        }
-    }
 
     override fun onInterrupt() {}
 
