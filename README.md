@@ -1,8 +1,7 @@
 
-# Project Title
+# Youtube Shorts Blocker
 
-A brief description of what this project does and who it's for
-
+Android utility that detects and blocks YouTube Shorts using an accessibility service
 
 ## Description
 AppBlocker is an Android utility that detects and blocks YouTube Shorts using an accessibility service. When Shorts content is detected, the app displays a full-screen overlay with a back button, preventing the user from watching the content.
