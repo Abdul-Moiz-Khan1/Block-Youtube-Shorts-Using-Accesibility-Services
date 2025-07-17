@@ -21,3 +21,11 @@ Searches for the YouTube Shorts RecyclerView with the ID
 When detected, an overlay view is shown over the screen.
 
 Users can press Back to exit Shorts and return to the previous screen.
+
+## Screenshot
+  Whenever shorts are opened, this page shows up with back button, on click of back button, user gets back to youtube home page 
+
+
+<p align="center">
+<img width="300" height="600" alt="block_shorts" src="https://github.com/user-attachments/assets/3b44542d-d8c4-4437-8b85-e39d46ed957c" />
+</p>
