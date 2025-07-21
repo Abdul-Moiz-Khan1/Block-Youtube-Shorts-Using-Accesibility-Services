@@ -7,4 +7,4 @@
     android:canRetrieveWindowContent="true"
     android:accessibilityFlags="flagReportViewIds"
     android:description="@string/accessibility_description"
-    android:packageNames="com.google.android.youtube" />
+ />
